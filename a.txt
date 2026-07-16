@@ -1,1 +1,102 @@
 acicauhvdih
+#!/bin/bash
+
+git --version
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+git config --list
+
+git init
+
+git clone https://github.com/username/repository.git
+
+git remote -v
+
+git remote add origin https://github.com/username/repository.git
+
+git status
+
+git add .
+git status
+
+git commit -m "Initial Commit"
+
+git branch
+git branch -a
+
+git branch feature-demo
+
+git checkout feature-demo
+
+git checkout -b feature-test
+
+git checkout main
+git checkout master
+
+git merge feature-demo
+
+git push origin main
+
+git pull origin main
+
+git fetch origin
+
+git remote show origin
+
+git remote rename origin upstream
+
+git remote set-url origin https://github.com/username/newrepo.git
+
+git remote remove origin
+
+git reset
+
+git restore filename
+
+git revert COMMIT_HASH
+
+git log --oneline
+
+git diff
+
+git show COMMIT_HASH
+
+git commit --amend -m "Corrected Commit"
+
+git reflog
+
+git checkout -b feature-ui COMMIT_HASH
+
+touch .gitignore
+
+echo "*.log" > .gitignore
+echo "node_modules/" >> .gitignore
+
+git blame script.py
+
+git stash
+git stash list
+git stash apply
+
+git branch --merged
+
+git branch -d feature-demo
+
+git branch -D feature-test
+
+git branch -d branch1 branch2 branch3
+
+git branch -r
+
+git remote prune origin
+
+git fetch origin feature-branch
+
+git push --set-upstream origin feature-branch
+
+git fetch origin
+
+git rebase origin/main
+
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch secrets.txt" --prune-empty --tag-name-filter cat -- --all
